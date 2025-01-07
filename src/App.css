@@ -36,3 +36,148 @@
     transform: rotate(360deg);
   }
 }
+/* General Styles */
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar Styles */
+.navbar {
+  background: linear-gradient(45deg,blue , lightblue);
+  padding: 1rem 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-item {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-item:hover {
+  color: #ffd700;
+}
+
+.cta-button {
+  background: #ffd700;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #4e54c8;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.cta-button:hover {
+  background: #ffcc00;
+  transform: scale(1.1);
+}
+
+/* Main Content Styles */
+.main-content {
+  padding: 20px;
+  background: #f4f4f4;
+  min-height: 100vh;
+}
+
+.main-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+
+}
+
+
+.book-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.book-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.book-card:hover {
+  transform: scale(1.05);
+}
+
+.book-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.book-info {
+  margin: 10px 0;
+}
+
+.book-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.action-btn {
+  background: blue;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.action-btn:hover {
+  background: #8f94fb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .cta-button {
+    display: none;
+  }
+
+  .book-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
